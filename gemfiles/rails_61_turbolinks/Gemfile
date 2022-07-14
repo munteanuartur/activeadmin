@@ -13,7 +13,7 @@ group :development, :test do
   gem "draper"
   gem "devise"
 
-  gem "rails", "~> 6.1.0"
+  gem "rails", "~> 6.1.6", ">= 6.1.6.1"
   gem "activerecord-jdbcsqlite3-adapter", platform: :jruby
 
   gem "sprockets-rails"
