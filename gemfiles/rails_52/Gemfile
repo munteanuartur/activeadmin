@@ -13,8 +13,8 @@ group :development, :test do
   gem "draper"
   gem "devise"
 
-  gem "rails", "~> 5.2.3"
-  gem "activerecord-jdbcsqlite3-adapter", platform: :jruby
+  gem "rails", "~> 6.1.7", ">= 6.1.7.1"
+  gem "activerecord-jdbcsqlite3-adapter", ">= 61.0", platform: :jruby
 
   gem "sprockets-rails"
   gem "sassc-rails"
@@ -34,7 +34,7 @@ group :test do
   gem "jasmine-core"
   gem "launchy"
   gem "parallel_tests"
-  gem "rails-i18n" # Provides default i18n for many languages
+  gem "rails-i18n" , ">= 6.0.0" # Provides default i18n for many languages
   gem "rspec-rails"
   gem "sqlite3", platform: :mri
 end
