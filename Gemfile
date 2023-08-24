@@ -7,16 +7,16 @@ group :development, :test do
   gem "pry-byebug", platform: :mri # Step-by-step debugging
 
   gem "cancancan"
-  gem "pundit"
+  gem "pundit", ">= 2.2.0"
   gem "jruby-openssl", platform: :jruby
 
   gem "draper"
-  gem "devise"
+  gem "devise", ">= 4.8.1"
 
-  gem "rails", "~> 6.1.0"
-  gem "activerecord-jdbcsqlite3-adapter", platform: :jruby
+  gem "rails", "~> 6.1.7", ">= 6.1.7.5"
+  gem "activerecord-jdbcsqlite3-adapter", ">= 61.0", platform: :jruby
 
-  gem "sprockets-rails"
+  gem "sprockets-rails", ">= 3.3.0"
   gem "sassc-rails"
 end
 
@@ -24,18 +24,18 @@ group :test do
   gem "cuprite"
   gem "capybara"
   gem "webrick"
-  gem "db-query-matchers"
+  gem "db-query-matchers", ">= 0.11.0"
 
   gem "simplecov", require: false # Test coverage generator. Go to /coverage/ after running tests
-  gem "cucumber-rails", require: false
+  gem "cucumber-rails", ">= 2.5.0", require: false
   gem "cucumber"
-  gem "database_cleaner"
+  gem "database_cleaner", ">= 2.0.2"
   gem "jasmine"
   gem "jasmine-core"
   gem "launchy"
   gem "parallel_tests"
-  gem "rails-i18n" # Provides default i18n for many languages
-  gem "rspec-rails"
+  gem "rails-i18n" , ">= 7.0.1" # Provides default i18n for many languages
+  gem "rspec-rails", ">= 5.0.3"
   gem "sqlite3", platform: :mri
 end
 
@@ -49,11 +49,11 @@ group :lint do
   gem "rubocop"
   gem "rubocop-packaging"
   gem "rubocop-rspec"
-  gem "rubocop-rails"
+  gem "rubocop-rails", ">= 2.10.0"
   gem "mdl"
 
   # Translations
-  gem "i18n-tasks"
+  gem "i18n-tasks", ">= 0.9.36"
   gem "i18n-spec"
 end
 
