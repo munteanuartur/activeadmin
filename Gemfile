@@ -27,7 +27,7 @@ group :test do
   gem "db-query-matchers"
 
   gem "simplecov", require: false # Test coverage generator. Go to /coverage/ after running tests
-  gem "cucumber-rails", require: false
+  gem "cucumber-rails", ">= 2.5.0", require: false
   gem "cucumber"
   gem "database_cleaner"
   gem "jasmine"
@@ -46,11 +46,11 @@ end
 
 group :lint do
   # Code style
-  gem "rubocop"
-  gem "rubocop-packaging"
-  gem "rubocop-rspec"
-  gem "rubocop-rails"
-  gem "mdl"
+  gem "rubocop", ">= 1.0.0"
+  gem "rubocop-packaging", ">= 0.5.2"
+  gem "rubocop-rspec", ">= 2.0.0"
+  gem "rubocop-rails", ">= 2.10.0"
+  gem "mdl", ">= 0.12.0"
 
   # Translations
   gem "i18n-tasks"
@@ -59,7 +59,7 @@ end
 
 group :docs do
   gem "yard" # Documentation generator
-  gem "kramdown" # Markdown implementation (for yard)
+  gem "kramdown" , ">= 2.3.2" # Markdown implementation (for yard)
 end
 
 gemspec path: "."
