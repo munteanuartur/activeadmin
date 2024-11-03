@@ -27,7 +27,7 @@ group :test do
   gem "db-query-matchers"
 
   gem "simplecov", require: false # Test coverage generator. Go to /coverage/ after running tests
-  gem "cucumber-rails", require: false
+  gem "cucumber-rails", ">= 3.0.0", require: false
   gem "cucumber"
   gem "database_cleaner"
   gem "jasmine"
@@ -46,7 +46,7 @@ end
 
 group :lint do
   # Code style
-  gem "rubocop"
+  gem "rubocop", ">= 1.66.0"
   gem "rubocop-packaging"
   gem "rubocop-rspec"
   gem "rubocop-rails"
