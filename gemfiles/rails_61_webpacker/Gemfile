@@ -33,7 +33,7 @@ group :test do
   gem "jasmine-core"
   gem "launchy"
   gem "parallel_tests"
-  gem "rails-i18n" # Provides default i18n for many languages
+  gem "rails-i18n" , ">= 8.0.0" # Provides default i18n for many languages
   gem "rspec-rails"
   gem "sqlite3", platform: :mri
 end
