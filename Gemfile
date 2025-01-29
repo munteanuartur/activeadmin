@@ -14,7 +14,7 @@ group :development, :test do
   gem "devise"
 
   gem "rails", "~> 6.1.0"
-  gem "activerecord-jdbcsqlite3-adapter", platform: :jruby
+  gem "activerecord-jdbcsqlite3-adapter", ">= 71.0", platform: :jruby
 
   gem "sprockets-rails"
   gem "sassc-rails"
