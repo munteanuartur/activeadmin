@@ -13,7 +13,7 @@ group :development, :test do
   gem "draper"
   gem "devise"
 
-  gem "rails", "~> 6.1.0"
+  gem "rails", "~> 7.0.0"
   gem "activerecord-jdbcsqlite3-adapter", platform: :jruby
 
   gem "sprockets-rails"
@@ -48,8 +48,8 @@ group :lint do
   # Code style
   gem "rubocop"
   gem "rubocop-packaging"
-  gem "rubocop-rspec"
-  gem "rubocop-rails"
+  gem "rubocop-rspec", ">= 3.5.0"
+  gem "rubocop-rails", ">= 2.30.0"
   gem "mdl"
 
   # Translations
