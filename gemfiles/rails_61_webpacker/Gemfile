@@ -34,7 +34,7 @@ group :test do
   gem "launchy"
   gem "parallel_tests"
   gem "rails-i18n" # Provides default i18n for many languages
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 8.0.0"
   gem "sqlite3", platform: :mri
 end
 
